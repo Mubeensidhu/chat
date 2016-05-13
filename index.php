@@ -4,9 +4,14 @@ include 'db.php';
 <!DOCTYPE html> 
 <html>
 	<head>
-		<title>Chat System in PHP</title>
+		<title>LOGIN FORM</title>
 	<link rel="stylesheet" href="style.css" media="all"/>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	 <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+     <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+     <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	
+    </script>
 	<script>
 		
 		setInterval(function(){
@@ -18,13 +23,14 @@ include 'db.php';
 <body onload="ajax();">
 
 <div id="container">
+
 		<div id="chat_box">
 		<div id="chat"></div>
 		</div>
 		<form method="post" action="index.php">
 		<input type="text" name="name" placeholder="enter name"/> 
 		<textarea name="msg" placeholder="enter message"></textarea>
-		<input type="submit" name="submit" value="Send it"/>
+		<input type="submit" name="submit" value="Send"/>
 		
 		</form>
 		<?php 
